@@ -213,7 +213,8 @@
               tc.newTaco = _.clone(defaultTaco);
             })
             .catch(function (err) {
-              tc.createError = err.message || err.statusText;
+              tc.createError = err.data.notes[1] || err.data.notes[0];
+              console.log(tc.createError)
             })
             .finally(function () {
               tc.creatingTaco = false;
