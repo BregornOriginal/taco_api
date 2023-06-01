@@ -11,12 +11,12 @@ RSpec.describe TacosController, type: :controller do
   describe "POST #create" do
     it "creates a new taco" do
       expect {
-        post :create, params: { taco: { meat: "Chicken", rice: "false", salsa: "false", notes: "Roast" } }
+        post :create, params: { taco: { meat: "Chicken", rice: "false", salsa: "Yes", chesse: "false", notes: "Roast" } }
       }.to change(Taco, :count).by(1)
     end
 
     it "returns a created response" do
-      post :create, params: { taco: { meat: "Chicken", rice: "false", salsa: "false", notes: "Roast" } }
+      post :create, params: { taco: { meat: "Chicken", rice: "false", salsa: "Yes", chesse: "false", notes: "Roast" } }
       expect(response).to have_http_status(:created)
     end
   end

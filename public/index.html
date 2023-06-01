@@ -73,6 +73,15 @@
               />
               Steak
             </label>
+            <label class="radio-inline">
+              <input
+                type="radio"
+                name="meat"
+                value="milanesa"
+                ng-model="tc.newTaco.meat"
+              />
+              Milanesa
+            </label>
           </div>
 
           <label>Sides</label>
@@ -82,6 +91,9 @@
             </label>
             <label class="checkbox-inline">
               <input type="checkbox" ng-model="tc.newTaco.salsa" /> Salsa
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" ng-model="tc.newTaco.chesse" /> Chesse
             </label>
           </div>
 
@@ -111,6 +123,7 @@
             <th>Meat</th>
             <th>Rice</th>
             <th>Salsa</th>
+            <th>Chesse</th>
             <th>Notes</th>
             <th></th>
           </tr>
@@ -121,6 +134,7 @@
             <td class="meat">{{taco.meat}}</td>
             <td class="rice">{{taco.rice ? 'yes' : 'no'}}</td>
             <td class="salsa">{{taco.salsa ? 'yes' : 'no'}}</td>
+            <td class="chesse">{{taco.chesse ? 'yes' : 'no'}}</td>
             <td>{{taco.notes}}</td>
             <td>
               <button
@@ -144,7 +158,8 @@
 
       table.tacos td.meat,
       table.tacos td.rice,
-      table.tacos td.salsa {
+      table.tacos td.salsa,
+      table.tacos td.chesse {
         text-transform: capitalize;
       }
     </style>
@@ -214,7 +229,7 @@
             })
             .catch(function (err) {
               tc.createError = err.data.notes[1] || err.data.notes[0];
-              console.log(tc.createError)
+              console.log(tc.createError);
             })
             .finally(function () {
               tc.creatingTaco = false;
