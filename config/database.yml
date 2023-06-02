@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: taco_api_production
-  username: taco_api
-  password: <%= ENV["TACO_API_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
