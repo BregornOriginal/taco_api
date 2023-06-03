@@ -6,17 +6,15 @@ This app was created with Rails, include some tests with Rspec too
 
 ## Live Version
 
-[Avaible Soon]()
+[Taco app](https://taco-services.onrender.com/)
 
 ## Built With:
 
 - Ruby on Rails
 - RSpec
-- SASS
+- CSS
+- Angular
 - PostgresSQL
-- Devise
-- CanCanCan
-- JWT
 
 Prerequisites
 
