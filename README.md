@@ -1,24 +1,72 @@
-# README
+# Taco app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this Taco app, I've followed the instructions provided to make the application working as a RoR API. Using only an index.html with Anguar
 
-Things you may want to cover:
+This app was created with Rails, include some tests with Rspec too
 
-* Ruby version
+## Live Version
 
-* System dependencies
+[Avaible Soon]()
 
-* Configuration
+## Built With:
 
-* Database creation
+- Ruby on Rails
+- RSpec
+- SASS
+- PostgresSQL
+- Devise
+- CanCanCan
+- JWT
 
-* Database initialization
+Prerequisites
 
-* How to run the test suite
+- Ruby 3.1.2 or newer
+- Rails 7.0.4 or newer
+- Git
+- NPM
+- PostgreSQL
+- Modern web browser
 
-* Services (job queues, cache servers, search engines, etc.)
+## Getting Started
+- To get a local copy of this project clone this repository or download the Zip folder:
+git clone https://github.com/BregornOriginal/taco_api.git
 
-* Deployment instructions
+- To get started, In the root directory run:
+gem install bundler
 
-* ...
+- Run:
+bin/setup
+
+- Then run:
+bundle install
+
+- Run ruby on rails app in the Command Line:
+rails s
+
+- Then browse http://localhost:3000
+
+### Usage
+
+To edit this project:
+
+- Open the repository you cloned with a code editor that you like.
+
+- Edit the code as you want.
+
+## Author:
+
+👤 **@BregornOriginal**
+
+- GitHub: [![GitHub Badge](https://img.shields.io/badge/-BregornOriginal-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/BregornOriginal)
+
+- Twitter: [![Twitter Badge](https://img.shields.io/badge/-Bregorn-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/Bregorn)
+
+- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-JulioGagliardi-white?logo=LinkedIn&logoColor=1DA1F2&style=plastic)](https://www.linkedin.com/in/julio-gagliardi/)
+
+## :star2: Show your support
+
+Give a :star: if you like my project!
+
+## :pencil: License
+
+This project is [MIT](https://github.com/BregornOriginal/taco_api/blob/main/LICENSE) licensed.
